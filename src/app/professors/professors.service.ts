@@ -17,7 +17,7 @@ export class ProfessorsService {
   }
 
   addProfessor(professor: Professor) {
-    var datePipe = new DatePipe();
+    var datePipe = new DatePipe('pt-PT');
     professor.entryDate = datePipe.transform(new Date(), 'yyyy-MM-dd');
     return this.professors.push(professor);
   }

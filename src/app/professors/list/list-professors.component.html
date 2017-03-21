@@ -3,8 +3,10 @@
     <md-card class="card">
         <md-toolbar color="primary">Professores
             <div class="searchbar">
-                <md-icon  >search</md-icon>
-                <md-input #input (keyup)="search(input.value)" placeholder="Pesquisa" value=""></md-input>
+                <md-icon >search</md-icon>
+                <md-input-container>
+                    <input mdInput #input (keyup)="search(input.value)" placeholder="Pesquisa" value=""/>
+                </md-input-container>
             </div>
         </md-toolbar>
         <md-card-content>

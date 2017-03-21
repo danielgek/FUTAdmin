@@ -23,7 +23,7 @@ export class StudentsService {
   }
 
   addStudent(student: Student) {
-    var datePipe = new DatePipe();
+    let datePipe = new DatePipe('pt-PT');
     student.entryDate = datePipe.transform(new Date(), 'yyyy-MM-dd');
     student.responsibleAdult.entryDate = datePipe.transform(new Date(), 'yyyy-MM-dd');
     return this.students.push(student);

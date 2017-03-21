@@ -19,8 +19,7 @@
   </button>
 
 </md-toolbar>
-<md-sidenav-layout class="demo-sidenav-layout">
-
+<md-sidenav-container class="demo-sidenav-layout">
   <md-sidenav #sidenav opened="false" mode="side">
     <md-nav-list>
       <a md-list-item [routerLink]="['home']">Home</a>
@@ -30,4 +29,4 @@
     </md-nav-list>
   </md-sidenav>
   <router-outlet></router-outlet>
-</md-sidenav-layout>
+</md-sidenav-container>

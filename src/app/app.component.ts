@@ -3,13 +3,12 @@ import { Router } from '@angular/router';
 import { Location } from '@angular/common';
 import { AuthService } from './auth.service';
 
-import { MdSidenav } from '@angular2-material/sidenav';
+import { MdSidenav } from '@angular/material';
 
 
 
 @Component({
   selector: 'app-root',
-  directives: [],
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.css'],
 })

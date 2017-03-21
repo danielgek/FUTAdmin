@@ -54,12 +54,16 @@
             <table style="width: 100%" cellspacing="0">
                 <tr>
                     <td colspan="2">
-                        <md-input type="date"  style="width: 95%" placeholder="Mes e Ano Correspondentes" ></md-input>                    
+                        <md-input-container>
+                            <input mdInput type="date" placeholder="Mes e Ano Correspondentes" />                   
+
+                        </md-input-container>
                     </td>
                     <td colspan="2">
-                        <md-input  placeholder="Valor" style="width: 100%">
-                            <span md-suffix>€</span>
-                        </md-input>
+                        <md-input-container >
+                            <input mdInput placeholder="Valor" style="width: 100%">
+                            <span mdSuffix>€</span>
+                        </md-input-container>
                     </td>
                 </tr>
             </table>

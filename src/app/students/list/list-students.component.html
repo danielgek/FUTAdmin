@@ -4,7 +4,9 @@
         <md-toolbar color="primary">Alunos
              <div class="searchbar">
                 <md-icon >search</md-icon>
-                <md-input #input (keyup)="search(input.value)" placeholder="Pesquisa" value=""></md-input>
+                <md-input-container>
+                    <input mdInput #input (keyup)="search(input.value)" placeholder="Pesquisa" value=""/>
+                </md-input-container>
             </div>
         </md-toolbar>
         <md-card-content>

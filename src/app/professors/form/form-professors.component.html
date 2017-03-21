@@ -5,89 +5,99 @@
             <md-toolbar color="primary">Dados do Professor</md-toolbar>
             <md-card-content>
                 
-                <table style="width: 100%" cellspacing="0">
+                <table cellspacing="0">
                     <tr>
                         <td colspan="3">
-                            <md-input formControlName="firstName" placeholder="Nome Próprio" style="width: 95%">
-                                <md-hint [hidden]="professorsForm.controls.firstName.valid || (professorsForm.controls.firstName.pristine && !submitted)" align="start">
-                                    This field is required!
-                                </md-hint>
-                            </md-input>
+                            <md-input-container>
+                                <input mdInput formControlName="firstName" placeholder="Nome Próprio" >
+                            </md-input-container>
+                            <md-hint [hidden]="professorsForm.controls.firstName.valid || (professorsForm.controls.firstName.pristine && !submitted)" align="start">
+                                This field is required!
+                            </md-hint>
                         </td>
                         <td colspan="3">
-                            <md-input formControlName="lastName" placeholder="Último Nome" style="width: 100%">
-                                <md-hint [hidden]="professorsForm.controls.lastName.valid || (professorsForm.controls.lastName.pristine && !submitted)" align="start">
-                                    This field is required!
-                                </md-hint>
-                            </md-input>
+                            <md-input-container>
+                                <input mdInput formControlName="lastName" placeholder="Último Nome"
+                            </md-input-container>
+                            <md-hint [hidden]="professorsForm.controls.lastName.valid || (professorsForm.controls.lastName.pristine && !submitted)" align="start">
+                                This field is required!
+                            </md-hint>
                         </td>
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <md-input formControlName="address" style="width: 95%" placeholder="Morada">
-                                <md-hint [hidden]="professorsForm.controls.address.valid || (professorsForm.controls.address.pristine && !submitted)" align="start">
-                                    This field is required!
-                                </md-hint>
-                            </md-input>
+                            <md-input-container>
+                                <input mdInput formControlName="address" placeholder="Morada">
+                            </md-input-container>
+                            <md-hint [hidden]="professorsForm.controls.address.valid || (professorsForm.controls.address.pristine && !submitted)" align="start">
+                                This field is required!
+                            </md-hint>
                         </td>
                         <td colspan="2">
-                            <md-input formControlName="email" style="width: 95%" placeholder="Email">
-                                <md-hint [hidden]="professorsForm.controls.email.valid || (professorsForm.controls.email.pristine && !submitted)" align="start">
-                                    This field is required!
-                                </md-hint>
-                            </md-input>
+                            <md-input-container>
+                                <input mdInput formControlName="email" placeholder="Email">
+                            </md-input-container>
+                            <md-hint [hidden]="professorsForm.controls.email.valid || (professorsForm.controls.email.pristine && !submitted)" align="start">
+                                This field is required!
+                            </md-hint>
                         </td>
                         <td colspan="2">
-                            <md-input formControlName="contact" style="width: 100%" placeholder="Contato">
-                                <md-hint [hidden]="professorsForm.controls.contact.valid || (professorsForm.controls.contact.pristine && !submitted)" align="start">
-                                    This field is required!
-                                </md-hint>
-                            </md-input>
+                            <md-input-container>
+                                <input mdInput formControlName="contact" placeholder="Contato">
+                            </md-input-container>
+                            <md-hint [hidden]="professorsForm.controls.contact.valid || (professorsForm.controls.contact.pristine && !submitted)" align="start">
+                                This field is required!
+                            </md-hint>
                         </td>
                     </tr>
                     <tr *ngIf="!edit">
                         <td colspan="3">
-                            <md-input formControlName="city" style="width: 95%" placeholder="Cidade">
-                                <md-hint [hidden]="professorsForm.controls.city.valid || (professorsForm.controls.city.pristine && !submitted)" align="start">
-                                    This field is required!
-                                </md-hint>
-                            </md-input>
+                            <md-input-container>
+                                <input mdInput formControlName="city" placeholder="Cidade">
+                            </md-input-container>
+                            <md-hint [hidden]="professorsForm.controls.city.valid || (professorsForm.controls.city.pristine && !submitted)" align="start">
+                                This field is required!
+                            </md-hint>
                         </td>
                         <td colspan="3">
-                            <md-input formControlName="postalCode" style="width: 95%" maxLength="8" placeholder="Código Postal">
+                            <md-input-container>
+                                <input mdInput formControlName="postalCode" maxLength="8" placeholder="Código Postal">
 
-                                <md-hint [hidden]="professorsForm.controls.postalCode.valid || (professorsForm.controls.postalCode.pristine && !submitted)" align="start">
-                                    This field is required!
-                                </md-hint>
-                            </md-input>
+                            </md-input-container>
+                            <md-hint [hidden]="professorsForm.controls.postalCode.valid || (professorsForm.controls.postalCode.pristine && !submitted)" align="start">
+                                This field is required!
+                            </md-hint>
                         </td>
                     </tr>
                     <tr *ngIf="!edit">
                         <td colspan="3">
-                            <md-input type="date" formControlName="birthdayDate" style="width: 95%" placeholder="Data de Nascimento">
-                                <md-hint [hidden]="professorsForm.controls.birthdayDate.valid || (professorsForm.controls.birthdayDate.pristine && !submitted)" align="start">
-                                    This field is required!
-                                </md-hint>
-                            </md-input>
+                            <md-input-container>
+                                <input mdInput type="date" formControlName="birthdayDate" placeholder="Data de Nascimento">
+                            </md-input-container>
+                            <md-hint [hidden]="professorsForm.controls.birthdayDate.valid || (professorsForm.controls.birthdayDate.pristine && !submitted)" align="start">
+                                This field is required!
+                            </md-hint>
                         </td>
                         <td colspan="3">
                         </td>
                     </tr>
                      <tr *ngIf="edit">
                         <td colspan="2">
-                            <md-input formControlName="city" style="width: 95%" placeholder="Cidade">
-                                <md-hint [hidden]="professorsForm.controls.city.valid || (professorsForm.controls.city.pristine && !submitted)" align="start">
-                                    This field is required!
-                                </md-hint>
-                            </md-input>
+                            <md-input-container>
+                                <input mdInput formControlName="city" placeholder="Cidade">
+                            </md-input-container>
+                            <md-hint [hidden]="professorsForm.controls.city.valid || (professorsForm.controls.city.pristine && !submitted)" align="start">
+                                This field is required!
+                            </md-hint>
                         </td>
                         <td colspan="2">
-                            <md-input formControlName="postalCode" style="width: 95%" maxLength="8" placeholder="Código Postal">
+                            <md-input-container>
+                                <input mdInput formControlName="postalCode" maxLength="8" placeholder="Código Postal">
 
-                                <md-hint [hidden]="professorsForm.controls.postalCode.valid || (professorsForm.controls.postalCode.pristine && !submitted)" align="start">
-                                    This field is required!
-                                </md-hint>
-                            </md-input>
+                            </md-input-container>
+                            <md-hint [hidden]="professorsForm.controls.postalCode.valid || (professorsForm.controls.postalCode.pristine && !submitted)" align="start">
+                                This field is required!
+                            </md-hint>
                         </td>
                     </tr>
                 </table>
@@ -97,7 +107,7 @@
         <md-card>
             <md-toolbar color="primary">Dados Contratuais</md-toolbar>
             <md-card-content>
-                <table style="width: 100%" cellspacing="0" >
+                <table cellspacing="0" >
                     <tr formGroupName="canGive">
                         <td colspan="2">
                             <md-checkbox formControlName="0">
@@ -123,12 +133,13 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <md-input formControlName="rewarnPerHour" placeholder="Pagamento à Hora" style="width: 100%">
-                                <span md-suffix>€</span>
-                                <md-hint [hidden]="professorsForm.controls.rewarnPerHour.valid || (professorsForm.controls.rewarnPerHour.pristine && !submitted)" align="start">
-                                    This field is required!
-                                </md-hint>
-                            </md-input>
+                            <md-input-container>
+                                <input mdInput formControlName="rewarnPerHour" placeholder="Pagamento à Hora"/>
+                                <span mdSuffix>€</span>
+                            </md-input-container>
+                            <md-hint [hidden]="professorsForm.controls.rewarnPerHour.valid || (professorsForm.controls.rewarnPerHour.pristine && !submitted)" align="start">
+                                This field is required!
+                            </md-hint>
                         </td>
 
                     </tr>

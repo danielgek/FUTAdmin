@@ -12,14 +12,7 @@ import { StudentsService } from './students.service';
 import { StudentsComponent } from './students.component';
 
 import { HttpModule } from '@angular/http';
-import { MdIconModule } from '@angular2-material/icon';
-import { MdButtonModule } from '@angular2-material/button';
-import { MdListModule } from '@angular2-material/list';
-import { MdInputModule } from '@angular2-material/input';
-import { MdCardModule } from '@angular2-material/card';
-import { MdProgressCircleModule } from '@angular2-material/progress-circle';
-import { MdToolbarModule } from '@angular2-material/toolbar';
-import { MdRippleModule } from '@angular2-material/core';
+import { MaterialModule } from '@angular/material';
 
 
 @NgModule({
@@ -34,15 +27,8 @@ import { MdRippleModule } from '@angular2-material/core';
     CommonModule,
     studentRouting,
     ReactiveFormsModule,
-    MdCardModule,
-    MdListModule,
-    MdToolbarModule,
     HttpModule,
-    MdIconModule,
-    MdButtonModule,
-    MdInputModule,
-    MdProgressCircleModule,
-    MdRippleModule
+    MaterialModule
   ],
   providers: [StudentsService],
   bootstrap: [StudentsComponent]

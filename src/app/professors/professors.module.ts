@@ -11,16 +11,7 @@ import { ProfessorsService } from './professors.service';
 import { ProfessorsComponent } from './professors.component';
 
 import { HttpModule } from '@angular/http';
-import { MdIconModule } from '@angular2-material/icon';
-import { MdButtonModule } from '@angular2-material/button';
-import { MdListModule } from '@angular2-material/list';
-import { MdInputModule } from '@angular2-material/input';
-import { MdCardModule } from '@angular2-material/card';
-import { MdProgressCircleModule } from '@angular2-material/progress-circle';
-import { MdToolbarModule } from '@angular2-material/toolbar';
-import { MdRippleModule } from '@angular2-material/core';
-import { MdCheckboxModule } from '@angular2-material/checkbox';
-
+import { MaterialModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -33,16 +24,8 @@ import { MdCheckboxModule } from '@angular2-material/checkbox';
     CommonModule,
     professorsRouting,
     ReactiveFormsModule,
-    MdCardModule,
-    MdListModule,
-    MdToolbarModule,
     HttpModule,
-    MdIconModule,
-    MdButtonModule,
-    MdInputModule,
-    MdProgressCircleModule,
-    MdRippleModule,
-    MdCheckboxModule
+    MaterialModule
   ],
   providers: [ProfessorsService],
   bootstrap: [ProfessorsComponent]

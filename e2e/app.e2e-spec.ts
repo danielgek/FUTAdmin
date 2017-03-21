@@ -1,6 +1,6 @@
 import { FUTAdminPage } from './app.po';
 
-describe('futadmin App', function() {
+describe('futadmin App', () => {
   let page: FUTAdminPage;
 
   beforeEach(() => {
